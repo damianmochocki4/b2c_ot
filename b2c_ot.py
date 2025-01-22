@@ -65,6 +65,7 @@ def extract_reference_date_from_filename(filename):
 def browse_ot_file():
     global ot_file
     filename = filedialog.askopenfilename(title="Select OT File")
+    filename = os.path.normpath(filename)
     if filename:
         ot_file = filename
         ot_file_entry.delete(0, tk.END)
@@ -73,6 +74,7 @@ def browse_ot_file():
 def browse_project_file(project):
     global projects
     filename = filedialog.askopenfilename(title=f"Select {project} File")
+    filename = os.path.normpath(filename)
     if filename:
         projects[project] = filename
         project_entries[project].delete(0, tk.END)
@@ -81,6 +83,7 @@ def browse_project_file(project):
 def browse_bst_file():
     global bst_file_path
     filename = filedialog.askopenfilename(title="Select BST File")
+    filename = os.path.normpath(filename)
     if filename:
         bst_file_path = filename
         bst_file_entry.delete(0, tk.END)
