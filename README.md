@@ -4,5 +4,5 @@
 4. AO-Liste file has to have one tab for each export and be named after it ("B2C", "ERZ", ""WulaWE"), with data starting from row 6. Data structure in this tab has to be maintained.
 5. The date of the export is taken from the input's filename (MS). The naming convention has to be maintained.
 6. All the files are exported to the exe file directory, with project files ('Abnahme MFG', 'IBN PoP', 'Prüfung FNT', 'Eingang Doku') having month's abbreviation changed.
-7. Modified OT File has the same name as input, but with "B2C", "ERZ", ""WulaWE" or "Gesamt" added.
-8. The script execution may take some time, depending on the machine. After completion, there will be a pop-up window.
+7. Modified MS File has the same name as input, but with "B2C", "ERZ", ""WulaWE" or "Gesamt" added.
+8. The script execution may take some time, depending on the machine and the input files' size. After completion, there will be a pop-up window.
